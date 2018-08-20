@@ -2,3 +2,5 @@
 *.pyc
 *.zip
 log
+MNIST_data
+mnist

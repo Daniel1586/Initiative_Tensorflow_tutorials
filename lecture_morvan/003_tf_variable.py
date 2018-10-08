@@ -10,6 +10,7 @@ update = tf.assign(var, add_op)
 init = tf.initialize_all_variables()
 with tf.Session() as sess:
     sess.run(init)
+    print(sess.run(var))
     for _ in range(5):
         sess.run(update)
         print(sess.run(var))

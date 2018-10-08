@@ -18,7 +18,6 @@ optimizer = tf.train.GradientDescentOptimizer(0.5)
 train = optimizer.minimize(loss)
 
 init = tf.initialize_all_variables()
-# create tensorflow end
 
 sess = tf.Session()
 sess.run(init)

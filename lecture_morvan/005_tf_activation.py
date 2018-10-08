@@ -5,10 +5,9 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-# fake data
 x = np.linspace(-5, 5, 200)
 
-# following are popular activation functions
+# 定义不同的激活函数
 y_relu = tf.nn.relu(x)
 y_sigmoid = tf.nn.sigmoid(x)
 y_tanh = tf.nn.tanh(x)

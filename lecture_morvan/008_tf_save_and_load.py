@@ -17,7 +17,6 @@ ydata = np.power(xdata, 2) + noise                      # shape (100, 1) + some 
 
 
 def save():
-    # build neural network
     tf_x = tf.placeholder(tf.float32, xdata.shape)      # input x
     tf_y = tf.placeholder(tf.float32, ydata.shape)      # input y
     hd_l = tf.layers.dense(tf_x, 10, tf.nn.relu)        # hidden layer
@@ -33,7 +32,6 @@ def save():
         sess.run(train_op, {tf_x: xdata, tf_y: ydata})
     saver.save(sess, 'model/params', write_meta_graph=False)  # meta_graph is not recommended
 
-    # plot
     pred_o, pred_l = sess.run([ou_l, loss], {tf_x: xdata, tf_y: ydata})
     plt.figure(1, figsize=(10, 5))
     plt.subplot(121)
@@ -43,7 +41,6 @@ def save():
 
 
 def reload():
-    # build entire net again and restore
     tf_x = tf.placeholder(tf.float32, xdata.shape)      # input x
     tf_y = tf.placeholder(tf.float32, ydata.shape)      # input y
     hd_l = tf.layers.dense(tf_x, 10, tf.nn.relu)        # hidden layer
@@ -51,11 +48,9 @@ def reload():
     loss_ = tf.losses.mean_squared_error(tf_y, ou_l)    # compute cost
 
     sess = tf.Session()
-    # don't need to initialize variables, just restoring trained variables
     saver = tf.train.Saver()    # define a saver for saving and restoring
     saver.restore(sess, 'model/params')
 
-    # plot
     pred_o, pred_l = sess.run([ou_l, loss_], {tf_x: xdata, tf_y: ydata})
     plt.subplot(122)
     plt.scatter(xdata, ydata)
@@ -66,7 +61,6 @@ def reload():
 
 print('========== 2.Building model and save model params...')
 save()
-# destroy previous net
-tf.reset_default_graph()
+tf.reset_default_graph()    # 用于清除默认图形堆栈并重置全局默认图形
 print('========== 3.Loading model params ...')
 reload()

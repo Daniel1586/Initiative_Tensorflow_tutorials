@@ -3,8 +3,8 @@
 
 import numpy as np
 import tensorflow as tf
-from matplotlib import cm
 import matplotlib.pyplot as plt
+from matplotlib import cm
 from sklearn.manifold import TSNE
 from tensorflow.examples.tutorials.mnist import input_data
 
@@ -13,10 +13,10 @@ tf.set_random_seed(1)
 np.random.seed(1)
 
 learn_rate = 0.001
-batch_size = 50
+batch_size = 64
 
 print('========== 1.Loading data...')
-mnist = input_data.read_data_sets('./mnist', one_hot=True)      # they has been normalized to range (0,1)
+mnist = input_data.read_data_sets('./mnist', one_hot=True)
 test_x = mnist.test.images[:2000]
 test_y = mnist.test.labels[:2000]
 
@@ -26,9 +26,9 @@ plt.imshow(mnist.train.images[1].reshape((28, 28)), cmap='gray')
 plt.title('%i' % np.argmax(mnist.train.labels[1]))
 plt.show()
 
-tf_x = tf.placeholder(tf.float32, [None, 28*28]) / 255.
-image = tf.reshape(tf_x, [-1, 28, 28, 1])              # (batch, height, width, channel)
+tf_x = tf.placeholder(tf.float32, [None, 28*28]) / 255
 tf_y = tf.placeholder(tf.int32, [None, 10])            # input y
+image = tf.reshape(tf_x, [-1, 28, 28, 1])              # (batch, height, width, channel)
 
 print('========== 2.Building Network...')
 conv1 = tf.layers.conv2d(inputs=image, filters=16, kernel_size=5,
@@ -46,7 +46,7 @@ accuracy = tf.metrics.accuracy(          # return (acc, update_op), and create 2
 
 sess = tf.Session()
 init_op = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
-sess.run(init_op)     # initialize var in graph
+sess.run(init_op)
 
 
 def plot_with_labels(low_dim, lab):
@@ -80,7 +80,7 @@ for step in range(800):
 plt.ioff()
 
 # print 10 predictions from test data
-test_output = sess.run(output, {tf_x: test_x[:10]})
-pred_y = np.argmax(test_output, 1)
+test_o = sess.run(output, {tf_x: test_x[:10]})
+pred_y = np.argmax(test_o, 1)
 print('----- pred number: ', pred_y)
 print('----- real number: ', np.argmax(test_y[:10], 1))

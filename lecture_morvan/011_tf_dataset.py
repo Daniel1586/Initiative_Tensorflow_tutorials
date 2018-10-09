@@ -4,7 +4,7 @@
 import numpy as np
 import tensorflow as tf
 
-print('========== 1.Generating and Loading data...')
+print('========== 1.Generating data...')
 npx = np.random.uniform(-1, 1, (1000, 1))                           # x data
 npy = np.power(npx, 2) + np.random.normal(0, 0.1, size=npx.shape)   # y data
 npx_train, npx_test = np.split(npx, [800])                          # training and test data
@@ -28,8 +28,8 @@ loss = tf.losses.mean_squared_error(by, lo)
 train = tf.train.GradientDescentOptimizer(0.1).minimize(loss)
 
 sess = tf.Session()
-# need to initialize the iterator in this case
-sess.run([iterator.initializer, tf.global_variables_initializer()], feed_dict={tfx: npx_train, tfy: npy_train})
+sess.run([iterator.initializer, tf.global_variables_initializer()],
+         feed_dict={tfx: npx_train, tfy: npy_train})
 
 for step in range(201):
     try:

@@ -4,6 +4,7 @@
       <w>pred</w>
       <w>relu</w>
       <w>softplus</w>
+      <w>sprop</w>
       <w>tanh</w>
       <w>xdata</w>
       <w>ydata</w>

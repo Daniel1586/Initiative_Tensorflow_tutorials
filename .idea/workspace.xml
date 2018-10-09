@@ -12,28 +12,29 @@
     <session id="719730659">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="11" />
+          <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="11" />
+          <entry key="Python" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="170" />
+          <entry key="py" value="191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="170" />
+          <entry key="Python" value="191" />
         </counts>
       </usages-collector>
     </session>
@@ -41,13 +42,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lecture_morvan/008_tf_save_and_load.py">
+        <entry file="file://$PROJECT_DIR$/lecture_morvan/009_tf_optimizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+            <state relative-caret-position="496">
+              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
               <folding>
                 <element signature="e#43#61#0" expanded="true" />
-                <element signature="e#1624#2502#0" />
               </folding>
             </state>
           </provider>
@@ -68,13 +68,14 @@
         <option value="$PROJECT_DIR$/lecture_morvan/006_tf_regression.py" />
         <option value="$PROJECT_DIR$/lecture_morvan/007_tf_classification.py" />
         <option value="$PROJECT_DIR$/lecture_morvan/008_tf_save_and_load.py" />
+        <option value="$PROJECT_DIR$/lecture_morvan/009_tf_optimizer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="804" />
+    <option name="x" value="839" />
     <option name="y" value="2" />
-    <option name="width" value="1112" />
+    <option name="width" value="1077" />
     <option name="height" value="1064" />
   </component>
   <component name="ProjectView">
@@ -113,28 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.008_tf_save_and_load">
-    <configuration name="004_tf_placeholder" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Initiative_tensorflow_tutorials" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_morvan" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_morvan/004_tf_placeholder.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.009_tf_optimizer">
     <configuration name="005_tf_activation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Initiative_tensorflow_tutorials" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -219,20 +199,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="009_tf_optimizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Initiative_tensorflow_tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_morvan" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_morvan/009_tf_optimizer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.004_tf_placeholder" />
       <item itemvalue="Python.005_tf_activation" />
       <item itemvalue="Python.006_tf_regression" />
       <item itemvalue="Python.007_tf_classification" />
       <item itemvalue="Python.008_tf_save_and_load" />
+      <item itemvalue="Python.009_tf_optimizer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.009_tf_optimizer" />
         <item itemvalue="Python.008_tf_save_and_load" />
         <item itemvalue="Python.007_tf_classification" />
         <item itemvalue="Python.006_tf_regression" />
         <item itemvalue="Python.005_tf_activation" />
-        <item itemvalue="Python.004_tf_placeholder" />
       </list>
     </recent_temporary>
   </component>
@@ -250,23 +251,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="804" y="2" width="1112" height="1064" extended-state="0" />
+    <frame x="839" y="2" width="1077" height="1064" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24812031" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24719101" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20615034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23006834" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.19817768" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -298,21 +299,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lecture_morvan/001_tf_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lecture_morvan/005_tf_activation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -320,9 +312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-          <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -330,19 +319,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_morvan/008_tf_save_and_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_morvan/008_tf_save_and_load.py">
+    <entry file="file://$PROJECT_DIR$/lecture_morvan/009_tf_optimizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="496">
+          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
-            <element signature="e#1624#2502#0" />
           </folding>
         </state>
       </provider>

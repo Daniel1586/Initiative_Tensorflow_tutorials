@@ -15,23 +15,22 @@ batch_size = 64
 xdata = np.linspace(-1, 1, 100)[:, np.newaxis]              # shape (100, 1)
 noise = np.random.normal(0, 0.1, size=xdata.shape)
 ydata = np.power(xdata, 2) + noise                          # shape (100, 1) + some noise
-
 plt.scatter(xdata, ydata)
 plt.show()
 
 
-# default network
+# 定义神经网络
 class Net:
     def __init__(self, opt, **kwargs):
         self.x = tf.placeholder(tf.float32, [None, 1])
         self.y = tf.placeholder(tf.float32, [None, 1])
         l1 = tf.layers.dense(self.x, 20, tf.nn.relu)
-        out = tf.layers.dense(l1, 1)
-        self.loss = tf.losses.mean_squared_error(self.y, out)
+        lo = tf.layers.dense(l1, 1)
+        self.loss = tf.losses.mean_squared_error(self.y, lo)
         self.train = opt(learn_rate, **kwargs).minimize(self.loss)
 
 
-# different nets
+# 定义不同的优化方法
 net_SGD = Net(tf.train.GradientDescentOptimizer)
 net_Momentum = Net(tf.train.MomentumOptimizer, momentum=0.9)
 net_RMSprop = Net(tf.train.RMSPropOptimizer)
@@ -42,17 +41,14 @@ sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 losses_ = [[], [], [], []]
 
-# training
-for step in range(300):          # for each training step
+for step in range(300):
     index = np.random.randint(0, xdata.shape[0], batch_size)
     b_x = xdata[index]
     b_y = ydata[index]
-
     for net, l_ in zip(nets, losses_):
         _, l2 = sess.run([net.train, net.loss], {net.x: b_x, net.y: b_y})
-        l_.append(l2)     # loss recoder
+        l_.append(l2)
 
-# plot loss history
 labels = ['SGD', 'Momentum', 'RMSprop', 'Adam']
 for i, l_his in enumerate(losses_):
     plt.plot(l_his, label=labels[i])

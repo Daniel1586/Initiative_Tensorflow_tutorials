@@ -20,19 +20,23 @@ with tf.variable_scope('Net'):
     l1 = tf.layers.dense(tf_x, 10, tf.nn.relu, name='hidden_layer')
     lo = tf.layers.dense(l1, 1, name='output_layer')
 
-    # add to histogram summary
+    # 获取一条带有统计值的汇总数据
     tf.summary.histogram('hid_out', l1)
     tf.summary.histogram('pre_out', lo)
 
 loss = tf.losses.mean_squared_error(tf_y, lo, scope='loss')
 train_op = tf.train.GradientDescentOptimizer(learning_rate=0.5).minimize(loss)
-tf.summary.scalar('loss', loss)         # add loss to scalar summary
+
+# 获取一条带有标量值的汇总数据
+tf.summary.scalar('loss', loss)
 
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
-writer = tf.summary.FileWriter('log/', graph=sess.graph)     # write to file
-merge_op = tf.summary.merge_all()                       # operation to merge all summary
+# 写入事件文件
+writer = tf.summary.FileWriter('log/', graph=sess.graph)
+merge_op = tf.summary.merge_all()
 for step in range(100):
     _, result = sess.run([train_op, merge_op], {tf_x: xdata, tf_y: ydata})
     writer.add_summary(result, step)
+writer.close()

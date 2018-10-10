@@ -28,8 +28,8 @@ plt.title('%i' % np.argmax(mnist.train.labels[1]))
 plt.show()
 
 tf_x = tf.placeholder(tf.float32, [None, times_step * input_size])      # shape(batch, 784)
-image = tf.reshape(tf_x, [-1, times_step, input_size])                  # (batch, height, width, channel)
 tf_y = tf.placeholder(tf.int32, [None, 10])                             # input y
+image = tf.reshape(tf_x, [-1, times_step, input_size])                  # (batch, height, width)
 
 print('========== 3.Building Network...')
 rnn_cell = tf.contrib.rnn.BasicLSTMCell(num_units=64)
@@ -49,12 +49,11 @@ accuracy = tf.metrics.accuracy(          # return (acc, update_op), and create 2
 
 sess = tf.Session()
 init_op = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
-sess.run(init_op)     # initialize var in graph
-
-for step in range(1200):        # training
+sess.run(init_op)
+for step in range(1200):
     b_x, b_y = mnist.train.next_batch(batch_size)
     _, loss_ = sess.run([train_op, loss], {tf_x: b_x, tf_y: b_y})
-    if step % 100 == 0:         # testing
+    if step % 100 == 0:
         accuracy_ = sess.run(accuracy, {tf_x: test_x, tf_y: test_y})
         print('Step:', step, '| train loss: %.4f' % loss_, '| test accuracy: %.2f' % accuracy_)
 

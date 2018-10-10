@@ -19,41 +19,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="25" />
+          <entry key="py" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="25" />
+          <entry key="Python" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="251" />
+          <entry key="py" value="275" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="251" />
+          <entry key="Python" value="275" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lecture_morvan/014_tf_rnn_regression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="36" column="4" selection-start-line="36" selection-end-line="36" selection-end-column="4" />
-              <folding>
-                <element signature="e#43#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +61,7 @@
         <option value="$PROJECT_DIR$/lecture_morvan/012_tf_cnn.py" />
         <option value="$PROJECT_DIR$/lecture_morvan/013_tf_rnn_classification.py" />
         <option value="$PROJECT_DIR$/lecture_morvan/014_tf_rnn_regression.py" />
+        <option value="$PROJECT_DIR$/lecture_morvan/015_tf_autoencoder.py" />
       </list>
     </option>
   </component>
@@ -119,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.014_tf_rnn_regression">
+  <component name="RunManager" selected="Python.015_tf_autoencoder">
     <configuration name="008_tf_save_and_load" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Initiative_tensorflow_tutorials" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,27 +121,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_morvan/008_tf_save_and_load.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="011_tf_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Initiative_tensorflow_tutorials" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_morvan" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_morvan/011_tf_dataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,20 +192,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="015_tf_autoencoder" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Initiative_tensorflow_tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_morvan" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_morvan/015_tf_autoencoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.008_tf_save_and_load" />
-      <item itemvalue="Python.011_tf_dataset" />
       <item itemvalue="Python.012_tf_cnn" />
       <item itemvalue="Python.013_tf_rnn_classification" />
       <item itemvalue="Python.014_tf_rnn_regression" />
+      <item itemvalue="Python.015_tf_autoencoder" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.015_tf_autoencoder" />
         <item itemvalue="Python.014_tf_rnn_regression" />
         <item itemvalue="Python.013_tf_rnn_classification" />
         <item itemvalue="Python.012_tf_cnn" />
         <item itemvalue="Python.008_tf_save_and_load" />
-        <item itemvalue="Python.011_tf_dataset" />
       </list>
     </recent_temporary>
   </component>
@@ -257,14 +245,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="853" y="2" width="1063" height="1064" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27576056" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27576056" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27790433" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5113895" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -355,20 +342,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_morvan/012_tf_cnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lecture_morvan/013_tf_rnn_classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="-176">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>
@@ -377,8 +354,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lecture_morvan/014_tf_rnn_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="36" column="4" selection-start-line="36" selection-end-line="36" selection-end-column="4" />
+        <state relative-caret-position="702">
+          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_morvan/012_tf_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_morvan/015_tf_autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>

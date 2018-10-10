@@ -28,7 +28,7 @@ plt.title('%i' % np.argmax(mnist.train.labels[1]))
 plt.show()
 
 print('========== 3.Building Network...')
-tf_x = tf.placeholder(tf.float32, [None, 28*28])        # value in the range of (0, 1)
+tf_x = tf.placeholder(tf.float32, [None, 28*28])
 en0 = tf.layers.dense(tf_x, 128, tf.nn.tanh)
 en1 = tf.layers.dense(en0, 64, tf.nn.tanh)
 en2 = tf.layers.dense(en1, 12, tf.nn.tanh)
@@ -56,13 +56,12 @@ for i in range(n_test_img):
     a[0][i].set_xticks(())
     a[0][i].set_yticks(())
 
-for step in range(8000):
+for step in range(4000):
     b_x, b_y = mnist.train.next_batch(batch_size)
     _, encoded_, decoded_, loss_ = sess.run([train, enc, dec, loss], {tf_x: b_x})
 
     if step % 100 == 0:
-        print('----- train loss: %.4f' % loss_)
-        # plotting decoded image (second row)
+        print('Step: ', step, '----- train loss: %.4f' % loss_)
         decoded_data = sess.run(dec, {tf_x: view_data})
         for i in range(n_test_img):
             a[1][i].clear()

@@ -3,12 +3,16 @@
     <words>
       <w>conv</w>
       <w>embs</w>
+      <w>ksize</w>
       <w>mnist</w>
       <w>pred</w>
       <w>relu</w>
+      <w>scipy</w>
       <w>softplus</w>
       <w>sprop</w>
       <w>tanh</w>
+      <w>tensorflow</w>
+      <w>toimage</w>
       <w>tsne</w>
       <w>xdata</w>
       <w>ydata</w>

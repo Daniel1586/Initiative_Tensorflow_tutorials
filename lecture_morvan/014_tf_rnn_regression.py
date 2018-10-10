@@ -35,7 +35,6 @@ outputs, final_s = tf.nn.dynamic_rnn(
 outs2D = tf.reshape(outputs, [-1, cells_size])                      # reshape 3D output to 2D for fully connected layer
 net_outs2D = tf.layers.dense(outs2D, input_size)
 outs = tf.reshape(net_outs2D, [-1, times_step, input_size])         # reshape back to 3D
-
 loss = tf.losses.mean_squared_error(labels=tf_y, predictions=outs)  # compute cost
 train_op = tf.train.AdamOptimizer(learn_rate).minimize(loss)
 

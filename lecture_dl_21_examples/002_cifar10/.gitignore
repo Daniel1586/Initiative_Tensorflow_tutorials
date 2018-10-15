@@ -1,0 +1,8 @@
+.idea
+*.pyc
+*.zip
+mnist
+cifar10*
+cifar*
+example_pic
+*.jpg

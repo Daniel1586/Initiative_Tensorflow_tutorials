@@ -93,7 +93,7 @@ if __name__ == '__main__':
         if not os.path.exists('cifar10_data/raw/'):
             os.makedirs('cifar10_data/raw/')
         # 保存30张图片
-        for i in range(30):
+        for i in range(50):
             # 每次sess.run(reshaped_image)，都会取出一张图片
             image_array = sess.run(reshaped_image)
             # 将图片保存

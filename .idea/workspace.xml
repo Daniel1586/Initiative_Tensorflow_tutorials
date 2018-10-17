@@ -12,10 +12,10 @@
     <session id="719730659">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -32,65 +32,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="899" />
+          <entry key="py" value="1373" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="899" />
+          <entry key="Python" value="1373" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/03_cifar10_train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="50" column="53" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="53" />
+            <state relative-caret-position="594">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="e#673#711#0" expanded="true" />
-                <element signature="e#2294#3295#0" />
-                <marker date="1539698971704" expanded="true" signature="2463:2472" ph="..." />
-                <marker date="1539698971704" expanded="true" signature="2619:2628" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/cifar10.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
-              <folding>
-                <element signature="e#1297#1335#0" expanded="true" />
-                <element signature="e#2897#3495#0" />
-                <element signature="e#3548#3917#0" />
-                <element signature="e#3980#4778#0" />
-                <element signature="e#5508#6300#0" />
-                <element signature="e#6328#9985#0" />
-                <element signature="e#10016#10831#0" />
-                <element signature="e#10873#11826#0" />
-                <element signature="e#11867#13731#0" />
-                <element signature="e#13772#14753#0" />
-                <marker date="1539699278423" expanded="true" signature="14124:14133" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/cifar10_input.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1872">
-              <caret line="137" column="43" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
-              <folding>
-                <element signature="e#794#832#0" expanded="true" />
-                <element signature="e#3988#5274#0" />
-                <element signature="e#5325#8075#0" />
-                <element signature="e#8058#10242#0" />
+                <marker date="1539786870898" expanded="true" signature="2295:2304" ph="..." />
+                <marker date="1539786870898" expanded="true" signature="2366:2379" ph="..." />
+                <marker date="1539786870898" expanded="true" signature="2493:2502" ph="..." />
+                <marker date="1539786870898" expanded="true" signature="2493:2506" ph="..." />
+                <marker date="1539786870898" expanded="true" signature="2661:2670" ph="..." />
+                <marker date="1539786870898" expanded="true" signature="2661:2674" ph="..." />
               </folding>
             </state>
           </provider>
@@ -125,16 +91,16 @@
         <option value="$PROJECT_DIR$/lecture_dl_21_examples/001_mnist/04_convolution.py" />
         <option value="$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/02_cifar10_savepic.py" />
         <option value="$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/__init__.py" />
-        <option value="$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/03_cifar10_train.py" />
         <option value="$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/cifar10.py" />
         <option value="$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/cifar10_input.py" />
+        <option value="$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/03_cifar10_train.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="1" />
-    <option name="width" value="958" />
+    <option name="width" value="1224" />
     <option name="height" value="1064" />
   </component>
   <component name="ProjectView">
@@ -316,7 +282,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="1" width="958" height="1064" extended-state="0" />
+    <frame x="65" y="1" width="1224" height="1064" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.29102844" />
@@ -505,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
           <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-          <folding>
-            <element signature="e#43#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -515,9 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="e#43#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -525,9 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#796#834#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -538,48 +495,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/03_cifar10_train.py">
+    <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/cifar10_input.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="50" column="53" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="716">
+          <caret line="251" lean-forward="true" selection-start-line="251" selection-end-line="251" />
           <folding>
-            <element signature="e#673#711#0" expanded="true" />
-            <element signature="e#2294#3295#0" />
-            <marker date="1539698971704" expanded="true" signature="2463:2472" ph="..." />
-            <marker date="1539698971704" expanded="true" signature="2619:2628" ph="..." />
+            <element signature="e#794#832#0" expanded="true" />
+            <element signature="e#1435#3961#0" />
+            <element signature="e#1433#2277#1" />
+            <element signature="e#4132#5506#0" />
+            <element signature="e#5325#8033#0" />
+            <element signature="e#8339#10663#0" />
+            <marker date="1539786428924" expanded="true" signature="2352:2357" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/cifar10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
+        <state relative-caret-position="590">
+          <caret line="278" column="36" selection-start-line="278" selection-start-column="36" selection-end-line="278" selection-end-column="36" />
           <folding>
             <element signature="e#1297#1335#0" expanded="true" />
-            <element signature="e#2897#3495#0" />
-            <element signature="e#3548#3917#0" />
-            <element signature="e#3980#4778#0" />
-            <element signature="e#5508#6300#0" />
-            <element signature="e#6328#9985#0" />
-            <element signature="e#10016#10831#0" />
-            <element signature="e#10873#11826#0" />
-            <element signature="e#11867#13731#0" />
-            <element signature="e#13772#14753#0" />
-            <marker date="1539699278423" expanded="true" signature="14124:14133" ph="..." />
+            <element signature="e#2899#3525#0" />
+            <element signature="e#3548#3929#0" />
+            <element signature="e#3980#4800#0" />
+            <element signature="e#4809#5473#0" />
+            <element signature="e#5501#6293#0" />
+            <element signature="e#6408#10284#0" />
+            <element signature="e#10317#11168#0" />
+            <element signature="e#11213#12216#0" />
+            <element signature="e#12207#14183#0" />
+            <element signature="e#13765#14729#0" />
+            <marker date="1539786263395" expanded="true" signature="14718:14727" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/cifar10_input.py">
+    <entry file="file://$PROJECT_DIR$/lecture_dl_21_examples/002_cifar10/03_cifar10_train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="137" column="43" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
+        <state relative-caret-position="594">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="38" />
           <folding>
-            <element signature="e#794#832#0" expanded="true" />
-            <element signature="e#3988#5274#0" />
-            <element signature="e#5325#8075#0" />
-            <element signature="e#8058#10242#0" />
+            <element signature="e#673#711#0" expanded="true" />
+            <marker date="1539786870898" expanded="true" signature="2295:2304" ph="..." />
+            <marker date="1539786870898" expanded="true" signature="2366:2379" ph="..." />
+            <marker date="1539786870898" expanded="true" signature="2493:2502" ph="..." />
+            <marker date="1539786870898" expanded="true" signature="2493:2506" ph="..." />
+            <marker date="1539786870898" expanded="true" signature="2661:2670" ph="..." />
+            <marker date="1539786870898" expanded="true" signature="2661:2674" ph="..." />
           </folding>
         </state>
       </provider>

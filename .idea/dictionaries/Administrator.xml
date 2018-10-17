@@ -4,6 +4,7 @@
       <w>cifar</w>
       <w>conv</w>
       <w>dest</w>
+      <w>dtype</w>
       <w>embs</w>
       <w>filenames</w>
       <w>filepath</w>
@@ -11,13 +12,17 @@
       <w>logits</w>
       <w>mnist</w>
       <w>pred</w>
+      <w>preprocess</w>
       <w>pylint</w>
       <w>relu</w>
+      <w>resized</w>
       <w>scipy</w>
+      <w>softmax</w>
       <w>softplus</w>
       <w>sprop</w>
       <w>statinfo</w>
       <w>tanh</w>
+      <w>tensorboard</w>
       <w>tensorflow</w>
       <w>toimage</w>
       <w>tsne</w>

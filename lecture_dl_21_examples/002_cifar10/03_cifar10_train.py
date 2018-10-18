@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-"""A binary to train CIFAR-10 using a single GPU.
+""" A binary to train CIFAR-10 using a single GPU.
 Accuracy:
 cifar10_train.py achieves ~86% accuracy after 100K steps (256 epochs of
 data) as judged by cifar10_eval.py.
@@ -31,11 +31,11 @@ FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string('train_dir', '/tmp/cifar10_train',
                            """Directory where to write event logs """
                            """and checkpoint.""")
-tf.app.flags.DEFINE_integer('max_steps', 100000,
+tf.app.flags.DEFINE_integer('max_steps', 10000,
                             """Number of batches to run.""")
 tf.app.flags.DEFINE_boolean('log_device_placement', False,
                             """Whether to log device placement.""")
-tf.app.flags.DEFINE_integer('log_frequency', 10,
+tf.app.flags.DEFINE_integer('log_frequency', 50,
                             """How often to log results to the console.""")
 
 
@@ -87,13 +87,13 @@ def train():
                     print(format_str % (datetime.now(), self._step, loss_value,
                                         examples_per_sec, sec_per_batch))
 
-    with tf.train.MonitoredTrainingSession(
-            checkpoint_dir=FLAGS.train_dir,
-            hooks=[tf.train.StopAtStepHook(last_step=FLAGS.max_steps),
-                   tf.train.NanTensorHook(loss), _LoggerHook()],
-            config=tf.ConfigProto(log_device_placement=FLAGS.log_device_placement)) as mon_sess:
-        while not mon_sess.should_stop():
-            mon_sess.run(train_op)
+        with tf.train.MonitoredTrainingSession(
+                checkpoint_dir=FLAGS.train_dir,
+                hooks=[tf.train.StopAtStepHook(last_step=FLAGS.max_steps),
+                       tf.train.NanTensorHook(loss), _LoggerHook()],
+                config=tf.ConfigProto(log_device_placement=FLAGS.log_device_placement)) as mon_sess:
+            while not mon_sess.should_stop():
+                mon_sess.run(train_op)
 
 
 def main(argv=None):

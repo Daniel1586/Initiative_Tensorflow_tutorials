@@ -17,18 +17,18 @@
 
 Summary of available functions:
 
- # Compute input images and labels for training. If you would like to run
- # evaluations, use inputs() instead.
- inputs, labels = distorted_inputs()
+Compute input images and labels for training. If you would like to run
+evaluations, use inputs() instead.
+inputs, labels = distorted_inputs()
 
- # Compute inference on the model inputs to make a prediction.
- predictions = inference(inputs)
+Compute inference on the model inputs to make a prediction.
+predictions = inference(inputs)
 
- # Compute the total loss of the prediction with respect to the labels.
- loss = loss(predictions, labels)
+Compute the total loss of the prediction with respect to the labels.
+loss = loss(predictions, labels)
 
- # Create a graph to run one step of training with respect to the loss.
- train_op = train(loss, global_step)
+Create a graph to run one step of training with respect to the loss.
+train_op = train(loss, global_step)
 """
 # pylint: disable=missing-docstring
 from __future__ import absolute_import

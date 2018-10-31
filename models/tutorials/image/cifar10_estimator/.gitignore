@@ -1,0 +1,5 @@
+.idea
+*.pyc
+*.zip
+cifar10
+cifar10_data
